@@ -1,2 +1,1 @@
-This is a text file.
-Initial data.
+New data added by person2.
