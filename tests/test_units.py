@@ -71,3 +71,20 @@ if __name__ == "__main__":
     test_multiply()
     test_power()
     print("All unit tests passed!")
+
+def test_is_prime():
+    from helper import is_prime
+    assert is_prime(2) == True
+    assert is_prime(3) == True
+    assert is_prime(4) == False
+    assert is_prime(17) == True
+    assert is_prime(1) == False
+    print("test_is_prime passed")
+
+if __name__ == "__main__":
+    test_greet()
+    test_farewell()
+    test_multiply()
+    test_power()
+    test_is_prime()
+    print("All unit tests passed!")
