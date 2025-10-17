@@ -10,16 +10,18 @@ def multiply(a, b):
 def power(base, exponent):
     return base ** exponent
 
-def is_prime(n):
-    if n <= 1:
-        return False
-    if n <= 3:
+def calculate_stats(numbers):
+    """Calculate basic statistics for a list of numbers"""
+    if not numbers:
+        return {"mean": 0, "min": 0, "max": 0}
+    return {
+        "mean": sum(numbers) / len(numbers),
+        "min": min(numbers),
+        "max": max(numbers)
+    }
+
+def validate_email(email):
+    """Basic email validation"""
+    if "@" in email and "." in email:
         return True
-    if n % 2 == 0 or n % 3 == 0:
-        return False
-    i = 5
-    while i * i <= n:
-        if n % i == 0 or n % (i + 2) == 0:
-            return False
-        i += 6
-    return True
+    return False
