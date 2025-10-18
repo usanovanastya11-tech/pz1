@@ -1,11 +1,8 @@
-# Requirements for CI/CD Project
-# This project uses standard Python libraries
-# No external dependencies required
-
-# Python version requirement
-python>=3.9
-
-# The following are standard library imports used:
-# - re (for email validation)
-# - math (built-in functions)
-# - sys, os (for path handling)
+pytest>=7.0.0
+pytest-cov>=4.0.0
+flake8>=6.0.0
+black>=23.0.0
+mypy>=1.0.0
+sphinx>=7.0.0
+twine>=4.0.0
+build>=1.0.0
