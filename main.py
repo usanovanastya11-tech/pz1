@@ -1,25 +1,16 @@
-print("Hello from main.py - CONFLICTING CHANGE IN MAIN!")
-def farewell(name):
-    return f"Goodbye, {name}!"
+print("Hello from main.py - Version 1.1.0")
 
-print("Hello from main.py - modified by person1 in dev branch - DIFFERENT TEXT!")
-def new_function():
-    return "This is a new function"
-
-print("Additional line added by person2 in dev2 branch")
-
-print("Hello from main.py - merged version after conflict resolution")
-def new_function():
-    return "This is a new function"
-
-print("Hello from main.py!")
-
-from helper import greet, farewell
+from helper import greet, farewell, power, is_prime
 
 def main():
     print(greet("User"))
     print(farewell("User"))
+    
+    power_result = power(2, 8)
+    print(f"2^8 = {power_result}")
+    
+    prime_check = is_prime(17)
+    print(f"Is 17 prime? {prime_check}")
 
 if __name__ == "__main__":
     main()
-
