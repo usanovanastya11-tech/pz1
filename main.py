@@ -12,7 +12,7 @@ print("Hello from main.py - merged version after conflict resolution")
 def new_function():
     return "This is a new function"
 
-print("Hello from main.py!")
+print("Hell from main.py!")
 
 from helper import greet, farewell
 
