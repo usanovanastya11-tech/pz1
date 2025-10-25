@@ -10,7 +10,7 @@ def main():
     print(f"2^8 = {power_result}")
     
     prime_check = is_prime(17)
-    print(f"Is 20 prime? {prime_check}")
+    print(f"Is 17 prime? {prime_check}")
 
 if __name__ == "__main__":
     main()
